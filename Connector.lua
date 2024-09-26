@@ -13,9 +13,9 @@ local Supported_Games = {
 if GameID == Supported_Games.LegendsOfSpeed_City
 or GameID == Supported_Games.LegendsOfSpeed_Space 
 or GameID == Supported_Games.LegendsOfSpeed_Desert then
-    print("This is Legends Of Speed!!!")
-elseif GameID == Supported_Games.MuscleLegends then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Cryo-Hub/refs/heads/main/LegendsOfSpeed.lua'),true))()
-else
+elseif GameID == Supported_Games.MuscleLegends then
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Cryo-Hub/refs/heads/main/MuscleLegends.lua'),true))()
+else
+    warn("The game you are in is NOT supported!")
 end
