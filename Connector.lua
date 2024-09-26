@@ -1,8 +1,21 @@
-Local Supported_Games = {
+-- Resources
+local GameID = game.PlaceId
 
-LegendsOfSpeed_City = 123,
-LegendsOfSpeed_Space = 213,
-LegendsOfSpeed_Desert = 312,
-MuscleLegends = 555,
-  
+-- Table
+local Supported_Games = {
+    LegendsOfSpeed_City = 3101667897,
+    LegendsOfSpeed_Space = 3232996272,
+    LegendsOfSpeed_Desert = 3276265788,
+    MuscleLegends = 3623096087,
 }
+
+-- Script
+if GameID == Supported_Games.LegendsOfSpeed_City
+or GameID == Supported_Games.LegendsOfSpeed_Space 
+or GameID == Supported_Games.LegendsOfSpeed_Desert then
+    print("This is Legends Of Speed!!!")
+elseif GameID == Supported_Games.MuscleLegends then
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Cryo-Hub/refs/heads/main/LegendsOfSpeed.lua'),true))()
+else
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/CryoScript/Cryo-Hub/refs/heads/main/MuscleLegends.lua'),true))()
+end
