@@ -3,7 +3,7 @@
 
 Officially supported script for Cryo Hub!
 
-@Pb_Cryp
+@Pb_Cryo
 
 Utilizing: V3 Libraries
 
