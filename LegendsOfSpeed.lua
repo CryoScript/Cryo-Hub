@@ -1,1 +1,1 @@
-
+print("Legends Of Speed")
